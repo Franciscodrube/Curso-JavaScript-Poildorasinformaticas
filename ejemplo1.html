@@ -16,8 +16,6 @@
 
 <script>
     var Articulos = ["zapatillas","camiseta","pantalón","calcetines"];
-
-
 </script>
 </head>
 
@@ -25,10 +23,33 @@
     <script>
         document.write ("<p> El primer articulo es <strong><i>");
         document.write (Articulos[0] + "</i></strong></p>");
-        alert(Articulos.length);
+        // alert(Articulos.length);
     
+
+        Articulos.unshift ("Lentes");
+        document.write ("<p>Casi nos olvidamos de agregar <strong>");
+        document.write (Articulos[0] + "</strong></p>");
+        
+        document.write ("<p>¿Qué otro elemento nos faltó? <strong>");
+        Articulos.push(prompt("introduce un articulo"));
+        document.write (Articulos[Articulos.length-1] +"</strong></p>");
+        document.write("<p> En total tenemos <strong>");
+        document.write(Articulos.length +" Articulos </strong></p>");
+
+
+        Articulos.shift();
+        document.write("<p> En total tenemos <strong>");
+        document.write(Articulos.length +" Articulos </strong></p>");
+        
+        document.write("<p>" + Articulos[0] + "<br>")
+        document.write(Articulos[1] + "<br>")
+        document.write(Articulos[2] + "<br>")
+        document.write(Articulos[3] + "<br>")
+        document.write(Articulos[4] + "<br></p>")
+        
         </script>
 
+        
 
 <h1>Hola alumnos
 </h1>
