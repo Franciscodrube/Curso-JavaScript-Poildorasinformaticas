@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Hola Alumnos</title>
-<link href="css/micss.css" rel="stylesheet">
-<!-- 
-<script src="/Jquery/jquery-1.6.3.min.js"></script>
+<!-- <link href="css/micss.css" rel="stylesheet"> -->
+
+<!-- <script src="/Jquery/jquery-1.6.3.min.js"></script>
 <script> 
     $(function(){
         $("body").hide().fadeIn(3000);
 
-    }); -->
+    }); 
 
 </script>
 
 <script>
     var Articulos = ["zapatillas","camiseta","pantalón","calcetines"];
-</script>
+</script> -->
 </head>
 
-<body>
+<body id="cuerpo">
     <!-- <script>
         document.write ("<p> El primer articulo es <strong><i>");
         document.write (Articulos[0] + "</i></strong></p>");
@@ -56,14 +56,98 @@
 <p>Bienvenidos al curso de JavaScript de <span>Píldoras Informáticas</span></p>
 <img src="imgs/arbol.jpg" width="35%"> -->
 
-<input type="button" id="boton1">
+<!-- <input type="button" id="boton1">
+
+<input type="button" id="boton2">
+
+<input type="text" name="micuadro" id="micuadro"> -->
 
 
-<script>
-    var miboton = document.getElementById("boton1");
+<!-- <script>
+    var miboton1 = document.getElementById("boton1");
 
-    miboton.style.width ="1000px";
-</script>
+    var miboton2 = document.getElementById("boton2");
+    var micuadro =document.getElementById("micuadro");
+    
+    miboton1.style.width ="300px";
+    miboton1.style.height="300px"
+
+    miboton2.style.width ="300px";
+    miboton2.style.height="300px";
+    miboton2.focus();
+    micuadro.value="Escriba aquí...";
+    micuadro.style.background = "red";
+    micuadro.style.height = "100px";
+</script> -->
+
+<!-- <script>
+
+    let valorAuto= 60000;
+    let edad =prompt("Introduce tu edad");
+    let ahorros = prompt("Introduce tus ahorros");
+
+    if (edad>=18 && ahorros >= valorAuto){
+        alert("Puedes comprar el auto");
+    }
+    else{
+        alert("NO puedes comprar el auto");
+    }
+    
+    alert("continuamos con el programa...");
+</script> -->
+
+    <form name="form1" method="post" action="" id="miformulario">
+
+        <table width="25%" border="1" id="mitabla">
+            <tr>
+                <td>Nombre:</td>
+                <td>
+                    <label for="textfield"></label>
+                    <input type="text" name="textfield" id="textfield">
+                </td>
+            </tr>
+            <tr>
+                <td>Apellido:</td>
+                <td>
+                    <input type="text" name="textfield2" id="textfield2">
+                </td>
+            </tr>
+            <tr>
+                <td>Edad:</td>
+                <td>
+                    <input type="text" name="textfield3" id="textfield3">
+                </td>
+            </tr>
+            <tr>
+                <td>Carnet:</td>
+                <td>
+                    <input type="text" name="textfield4" id="textfield4">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="button" id="button" value="Enviar"></td>
+                <td>
+                    <input type="reset" name="button2" id="button2" value="Restablecer">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        var cuerpo = document.getElementById("cuerpo");
+        var colorWeb = prompt("Introduzca el color del fondo. Azul / Verde / Rojo");
+
+        if(colorWeb=="Azul"){
+            cuerpo.style.backgroundColor="blue";
+        }
+        else if (colorWeb=="Rojo") {
+            cuerpo.style.backgroundColor="red";
+        } 
+        else { 
+            cuerpo.style.backgroundColor="green";    
+        }
+
+    </script>
 
 
 
