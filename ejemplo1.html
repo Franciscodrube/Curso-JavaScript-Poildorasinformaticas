@@ -135,20 +135,23 @@
 
     <script>
         var cuerpo = document.getElementById("cuerpo");
-        var colorWeb = prompt("Introduzca el color del fondo. Azul / Verde / Rojo");
+        var colorWeb = prompt("Introduzca el color del fondo. Azul / Verde / Rojo").toLocaleLowerCase();
 
-        if(colorWeb=="Azul"){
+        if(colorWeb=="azul"){
             cuerpo.style.backgroundColor="blue";
         }
-        else if (colorWeb=="Rojo") {
+        else if (colorWeb=="rojo") {
             cuerpo.style.backgroundColor="red";
         } 
-        else { 
+        else if(colorWeb=="green"){ 
             cuerpo.style.backgroundColor="green";    
+        }
+        else{
+            alert("El color no está disponible");
         }
 
     </script>
-
+ 
 
 
 
