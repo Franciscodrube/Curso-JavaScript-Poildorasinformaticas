@@ -1,7 +1,7 @@
 
 
 body{
-	background-color:#00F;
+	background-color: whitesmoke;
 }
 
 h1{
@@ -18,4 +18,8 @@ p{
 }
 
 p span{font-size:2em;
+}
+
+img{
+	width: 600px;
 }
