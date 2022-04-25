@@ -6,17 +6,43 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
 
     <link rel="stylesheet" href="/css/micss.css">
-    <script src="Jquery/jquery-1.6.3.min.js"></script>
+    <script src="Jquery/Jquery-3.6.0.js"></script>
     <title>Document</title>
 
     <script>
 
-        function aviso(){
-            alert("Evento onClick");
-        }
+        // $(document).ready(function(){
+
+        //     // alert($("#errores h2").html());
+
+        //     $("#errores").after("<p> Hay errores en el formulario</p>");
+        // });
+
+        function validar (){
+
+            let n_usuario=  document.getElementById("usuario").value;
+            
+            if (n_usuario==""){
+                $("#usuario").after("Rellena este campo, por favor")
+                n_usuario = "no vacio";
+            }
+        } 
     </script>
 </head>
 <body>
-    <img src="/imgs/arbol.jpg" alt="" onmouseover="aviso()">
+    <div class="container">
+        <div class="micontenedor" id="errores">
+
+            <form action="" method="get">
+                <input name="" type="text" id="usuario"> <br>
+                <input name="" type="text" id="nombre"> <br>
+                <input name="" type="text" id="apellido"> <br>
+
+                <input type="button" value="Enviar" onclick="validar()">
+            </form>
+        </div>
+    </div>
+
+
 </body>
 </html>
